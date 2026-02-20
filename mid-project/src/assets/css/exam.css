@@ -1,0 +1,69 @@
+.exam-page {
+    padding: 100px 20px 100px 20px;
+    text-align: center;
+    
+}
+
+.exam-page h2 {
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+/* كروت الصفوف */
+.classes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.class-card {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.class-card:hover {
+    background-color: #3749b7;
+    transform: scale(1.05);
+}
+
+/* قسم الاختبارات */
+.exams-container {
+    margin-top: 40px;
+}
+
+.exams-container h3 {
+    margin-bottom: 20px;
+}
+
+/* كرت الاختبار */
+.exam-card {
+    background-color: #f3f4f6;
+    margin: 10px auto;
+    padding: 15px 20px;
+    width: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exam-card button {
+    background-color: #facc15;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.exam-card button:hover {
+    background-color: #fde047;
+}

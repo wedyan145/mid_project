@@ -1,0 +1,117 @@
+#main {
+    display: flex;
+    
+    gap: 200px;
+    margin-left: 200px;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+.button1 {
+    width: 220px;
+    height: 240px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+.button1:nth-child(1) { animation-delay: 0.2s; }
+.button1:nth-child(2) { animation-delay: 0.4s; }
+.button1:nth-child(3) { animation-delay: 0.6s; }
+
+.button1 img {
+    width: 90px;
+    margin-top: 25px;
+    transition: transform 0.4s ease;
+}
+
+.button1 p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.button1:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.35);
+}
+
+.button1:hover img {
+    transform: rotate(8deg) scale(1.1);
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+#addstudent {
+    width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 550px;
+    
+}
+
+.input-field {
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: #e0e0e0;
+}
+
+.input-field:focus {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#add {
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2575fc;
+    background: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#add:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+

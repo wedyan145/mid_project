@@ -1,0 +1,63 @@
+#tab {
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 390px;
+
+     /* لتطبيق border-radius على الجدول */
+}
+
+#tab th, #tab td {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+#tab th {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 18px;
+}
+
+#tab td {
+    background: #f4f4f9;
+    font-size: 16px;
+    color: #333;
+}
+
+#tab tr {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#tab tr:hover td {
+    background: #e0e0ff;
+    transform: scale(1.02);
+}
+
+#tab tr:nth-child(even) td {
+    background: #f0f0f7; /* لون بديل للصفوف الزوجية */
+}
+#tab tr:nth-child(even):hover td {
+    background: #d6d6f5;
+}
+#tab tr:nth-child(odd):hover td {
+    background: #e8e8ff;
+}
+#tab caption {
+    caption-side: top;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+#theme button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
