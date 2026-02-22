@@ -48,7 +48,6 @@
     transform: rotate(8deg) scale(1.1);
 }
 
-/* Animation */
 @keyframes fadeUp {
     from {
         opacity: 0;
